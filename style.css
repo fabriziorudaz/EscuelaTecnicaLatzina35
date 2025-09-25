@@ -1,9 +1,5 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -43,14 +39,10 @@ nav ul {
   transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: #ffd700;
-}
+.nav-link:hover { color: #ffd700; }
 
 /* Dropdown */
-.nav-item {
-  position: relative;
-}
+.nav-item { position: relative; }
 
 .dropdown-menu {
   position: absolute;
@@ -61,9 +53,7 @@ nav ul {
   flex-direction: column;
 }
 
-.nav-item:hover .dropdown-menu {
-  display: flex;
-}
+.nav-item:hover .dropdown-menu { display: flex; }
 
 .dropdown-item {
   color: #fff;
@@ -71,9 +61,7 @@ nav ul {
   text-decoration: none;
 }
 
-.dropdown-item:hover {
-  background: #003366;
-}
+.dropdown-item:hover { background: #003366; }
 
 /* Hero */
 .hero {
@@ -83,10 +71,7 @@ nav ul {
   padding: 80px 20px;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
+.hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
 
 .btn {
   display: inline-block;
@@ -100,14 +85,10 @@ nav ul {
   transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #ffcc00;
-}
+.btn:hover { background: #ffcc00; }
 
 /* Secciones */
-.section {
-  padding: 50px 20px;
-}
+.section { padding: 50px 20px; }
 
 .section-title {
   font-size: 2rem;
@@ -135,22 +116,45 @@ nav ul {
   margin-bottom: 10px;
 }
 
-.bg-light {
-  background: #eef2f5;
-}
+.bg-light { background: #eef2f5; }
 
 /* Campamento */
+.campamento-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.campamento-info { flex: 1; }
+
 .campamento-gallery {
+  flex: 1;
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .campamento-gallery img {
   border-radius: 10px;
   width: 45%;
   object-fit: cover;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
 }
 
 /* Footer */
@@ -187,11 +191,9 @@ footer {
     padding: 10px;
   }
 
-  nav ul.show {
-    display: flex;
-  }
+  nav ul.show { display: flex; }
 
-  .hamburger {
-    display: flex;
-  }
+  .hamburger { display: flex; }
+
+  .campamento-content { flex-direction: column; }
 }
