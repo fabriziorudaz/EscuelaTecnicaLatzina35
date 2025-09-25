@@ -8,7 +8,148 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header igual que arriba -->
+    <header>
+        <nav>
+            <div class="logo">ET 35 - Eduardo Latzina</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="especialidades.html">Especialidades</a>
+                    <ul class="submenu">
+                        <li><a href="#automotor" onclick="showSection('automotor')">Automotor</a></li>
+                        <li><a href="#computacion" onclick="showSection('computacion')">Computación</a></li>
+                    </ul>
+                </li>
+                <li><a href="campamento-suyai.html">Campamento Suyai</a></li>
+                <li><a href="comunidad-educativa.html">Comunidad Educativa</a></li>
+                <li><a href="escuela.html">Escuela</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
     <main>
-       
+        <section class="hero">
+            <h1>Especialidades Técnicas</h1>
+            <p>Formación de calidad en Automotores y Computación para el futuro profesional</p>
+        </section>
+
+        <section class="section" id="automotor">
+            <h2>🚗 Técnico en Automotores</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Taller+Automotor" alt="Taller de automotores con estudiantes trabajando en motores">
+                    <h3>Formación Práctica</h3>
+                    <p>Aprendizaje hands-on en nuestro taller equipado con tecnología moderna.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Mecánica+Avanzada" alt="Estudiante realizando diagnóstico en vehículo moderno">
+                    <h3>Tecnología Actual</h3>
+                    <p>Formación en sistemas electrónicos, diagnóstico computarizado y mecánica moderna.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Prácticas+Profesionales" alt="Estudiantes en práctica profesional en concesionaria">
+                    <h3>Prácticas Profesionales</h3>
+                    <p>Convenios con talleres y concesionarias para experiencia laboral real.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h3>Plan de Estudios</h3>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Mecánica general y aplicada</li>
+                    <li>Electrónica automotriz</li>
+                    <li>Diagnóstico computarizado</li>
+                    <li>Seguridad vehicular</li>
+                    <li>Gestón de talleres</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="computacion">
+            <h2>💻 Técnico en Computación</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Laboratorio+Computación" alt="Laboratorio de computación con equipos modernos">
+                    <h3>Laboratorios Modernos</h3>
+                    <p>Equipos de última generación para el aprendizaje práctico.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Programación" alt="Estudiante programando en computadora">
+                    <h3>Programación y Desarrollo</h3>
+                    <p>Formación en lenguajes modernos y desarrollo de software.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Redes+Seguridad" alt="Estudiante configurando equipos de red">
+                    <h3>Redes y Seguridad</h3>
+                    <p>Especialización en infraestructura de redes y ciberseguridad.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h3>Áreas de Especialización</h3>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Programación y desarrollo de software</li>
+                    <li>Administración de redes</li>
+                    <li>Base de datos</li>
+                    <li>Seguridad informática</li>
+                    <li>Soporte técnico</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📊 Campo Laboral</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Automotores</h3>
+                    <p>Talleres mecánicos, concesionarias, empresas de transporte, fábricas automotrices.</p>
+                </div>
+                <div class="card">
+                    <h3>Computación</h3>
+                    <p>Empresas de software, departamentos de IT, soporte técnico, administración de redes.</p>
+                </div>
+                <div class="card">
+                    <h3>Emprendimientos</h3>
+                    <p>Formación para emprender tu propio taller o empresa de tecnología.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📞 Más Información</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <h3>📍 Visítanos</h3>
+                    <p>Lope de Vega 2150, Buenos Aires</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Teléfono</h3>
+                    <p>4567-5838</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕒 Horarios</h3>
+                    <p>Lunes a Viernes<br>8:00 - 18:00 hs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Escuela Técnica 35 - Eduardo Latzina. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showSection(id) {
+            document.getElementById(id)?.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
