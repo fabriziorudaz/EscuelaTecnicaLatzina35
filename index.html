@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Técnica 35 - Eduardo Latzina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ET 35 - Eduardo Latzina</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="especialidades.html">Especialidades</a>
+                    <ul class="submenu">
+                        <li><a href="#automotor" onclick="showSection('automotor')">Automotor</a></li>
+                        <li><a href="#computacion" onclick="showSection('computacion')">Computación</a></li>
+                    </ul>
+                </li>
+                <li><a href="campamento-suyai.html">Campamento Suyai</a></li>
+                <li><a href="comunidad-educativa.html">Comunidad Educativa</a></li>
+                <li><a href="escuela.html">Escuela</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenidos a la Escuela Técnica 35 - Eduardo Latzina</h1>
+            <p>Formando técnicos en Automotores y Computación desde 1951. 📚🚗💻</p>
+        </section>
+
+        <section class="section">
+            <h2>Nuestra Escuela</h2>
+            <p>Fundada en 1951, somos una institución con tradición en educación técnica. Ubicada en Lope de Vega 2150, Buenos Aires.</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Edificio+Escuela" alt="Edificio de la Escuela">
+                    <h3>Edificio Histórico</h3>
+                    <p>Construido en 1948, con talleres modernos y laboratorios actualizados.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Especialidades" alt="Especialidades">
+                    <h3>Especialidades</h3>
+                    <p>Automotores y Computación: Preparándote para el futuro laboral.</p>
+                    <a href="especialidades.html">Ver más</a>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Campamento+Suyai" alt="Campamento Suyai">
+                    <h3>Campamento Suyai</h3>
+                    <p>Experiencias únicas en la naturaleza para el desarrollo personal.</p>
+                    <a href="campamento-suyai.html">Explorar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <h3>📞 Teléfono</h3>
+                    <p>4567-5838</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Dirección</h3>
+                    <p>Lope de Vega 2150, Buenos Aires</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Escuela Técnica 35 - Eduardo Latzina. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Función simple para subsecciones en especialidades (si se usa en index)
+        function showSection(id) {
+            // En una SPA real, esto mostraría/ocultaría; aquí solo scroll
+            document.getElementById(id)?.scrollIntoView();
+        }
+    </script>
+</body>
+</html>
