@@ -39,8 +39,8 @@ nav {
 }
 
 .logo-img {
-    width: 40px; /* Tamaño pequeño fijo */
-    height: 40px;
+    width: 20px; /* Tamaño pequeño fijo */
+    height: 20px;
     object-fit: contain; /* Mantiene proporciones sin distorsión */
     border-radius: 4px; /* Bordes redondeados opcionales para un look moderno */
     flex-shrink: 0; /* Evita que la imagen se achique */
