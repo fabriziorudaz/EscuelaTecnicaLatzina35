@@ -38,9 +38,15 @@ nav {
     padding: 0 2rem;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.logo-img {
+    width: 40px; /* Tamaño pequeño fijo */
+    height: 40px;
+    object-fit: contain; /* Mantiene proporciones sin distorsión */
+    border-radius: 4px; /* Bordes redondeados opcionales para un look moderno */
+    flex-shrink: 0; /* Evita que la imagen se achique */
+}
+.logo span {
+    /* El texto se ajusta automáticamente */
 }
 
 .nav-menu {
